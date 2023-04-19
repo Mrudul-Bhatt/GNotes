@@ -1,0 +1,121 @@
+<!-- <div> -->
+<!-- <div class="main-div"> -->
+<mat-card
+  class="mat-form"
+  (click)="toggleReadOnly()"
+  *ngIf="isReadOnly"
+  #noteRead
+  id="card1"
+>
+  <textarea
+    id="card1TA"
+    rows="1"
+    class="mat-form"
+    style="text-decoration: none; border: none; font-size: 1.25rem"
+    placeholder="Take a note..."
+  ></textarea>
+</mat-card>
+<!-- </div> -->
+
+<!-- <div class="main-div"> -->
+<mat-card
+  class="mat-form"
+  appNoteClose
+  (clickOutside)="toggle()"
+  *ngIf="card2"
+  #noteWrite
+  id="card2"
+>
+  <textarea
+    id="card2TA1"
+    class="mat-form"
+    maxlength="150"
+    appTextareaAutoresize
+    style="text-decoration: none; border: none; font-size: 1.25rem"
+    placeholder="Title"
+    rows="1"
+  ></textarea>
+  <textarea
+    id="card2TA2"
+    rows="1"
+    class="mat-form ta"
+    appTextareaAutoresize
+    style="text-decoration: none; border: none"
+    placeholder="Take a note..."
+  ></textarea>
+  <button mat-icon-button>
+    <!-- <mat-icon>add_alert</mat-icon> -->
+    <span class="material-symbols-outlined"> add_alert </span>
+  </button>
+  <button mat-icon-button>
+    <!-- <mat-icon>color_lens</mat-icon> -->
+    <span class="material-symbols-outlined"> color_lens </span>
+  </button>
+  <button mat-icon-button>
+    <!-- <mat-icon>archive</mat-icon> -->
+    <span class="material-symbols-outlined"> archive </span>
+  </button>
+  <button mat-icon-button>
+    <!-- <mat-icon>more_vert</mat-icon> -->
+    <span class="material-symbols-outlined"> more_vert </span>
+  </button>
+  <button mat-button>Close</button>
+</mat-card>
+<!-- </div> -->
+<!-- </div> -->
+
+<!-- <mat-card class="mat-form" *ngIf="!isMenuOpen">
+  <textarea
+    #toggleButton
+    (click)="toggleMenu()"
+    rows="1"
+    class="mat-form"
+    style="text-decoration: none; border: none; font-size: 1.25rem"
+    placeholder="Take a note..."
+  ></textarea>
+</mat-card>
+
+<mat-card *ngIf="isMenuOpen" class="mat-form" #ta>
+  <textarea
+    class="mat-form"
+    maxlength="150"
+    appTextareaAutoresize
+    style="text-decoration: none; border: none; font-size: 1.25rem"
+    placeholder="Title"
+    rows="1"
+  ></textarea>
+  <textarea
+    rows="1"
+    class="mat-form ta"
+    appTextareaAutoresize
+    style="text-decoration: none; border: none"
+    placeholder="Take a note..."
+  ></textarea>
+  <button mat-icon-button>
+    <mat-icon>add_alert</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>color_lens</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>archive</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <button mat-button>Close</button>
+</mat-card> -->
+
+<!-- <button #toggleButton (click)="toggleMenu()">Toggle Menu</button> -->
+<!-- <textarea
+  placeholder="TA 1"
+  (click)="toggleReadOnly()"
+  *ngIf="isReadOnly"
+  #ta1
+></textarea>
+<textarea
+  (click)="toggleTOGGLE()"
+  placeholder="TA 2"
+  *ngIf="!isReadOnly"
+  #ta2
+></textarea> -->

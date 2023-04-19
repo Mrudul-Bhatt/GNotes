@@ -1,0 +1,7 @@
+{
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.formatOnSave": true,
+  "cSpell.words": ["Autoresize"],
+  "editor.fontFamily": "Fira Code"
+}
